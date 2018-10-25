@@ -6,11 +6,9 @@ projectDir=$(dirname "$fileDir")
 cd $projectDir
 
 # check edp
-type edp >/dev/null 2>&1 || { echo >&2 "Please install edp.  Aborting."; exit 1; }
-
 echo "[edp build]: ./node"
 
-edp build --config ./edp-build-config-node.js --force
+npx edp build --config ./edp-build-config-node.js --force
 
 echo "[asset node]: ./"
 
