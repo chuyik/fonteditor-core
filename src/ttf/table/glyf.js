@@ -52,8 +52,10 @@ define(
                             Object.keys(subsetMap).forEach(function (i) {
                                 var index = +i;
                                 parsedGlyfMap[index] = true;
+
                                 // 当前的和下一个一样，或者最后一个无轮廓
-                                if (loca[index] === loca[index + 1]) {
+                                // index !==0 是为了避免 .notdef 没有数据
+                                if (index !== 0 && loca[index] === loca[index + 1]) {
                                     glyphs[index] = {
                                         contours: []
                                     };
