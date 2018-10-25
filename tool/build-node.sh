@@ -8,7 +8,7 @@ cd $projectDir
 # check edp
 echo "[edp build]: ./node"
 
-npx edp build --config ./edp-build-config-node.js --force
+edp build --config ./edp-build-config-node.js --force
 
 echo "[asset node]: ./"
 

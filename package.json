@@ -43,8 +43,6 @@
     "dependencies": {}
   },
   "dependencies": {
-    "edp": "^1.1.2",
-    "edp-build": "^1.2.4",
     "xmldom": "~0.1.19"
   },
   "repository": {
